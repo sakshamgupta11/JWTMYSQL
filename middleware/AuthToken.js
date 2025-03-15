@@ -34,7 +34,7 @@ const checkAuthtoken = async (req, res, next) => {
             next();
         } catch (error) {
             console.error("JWT Verification Error:", error);
-            return res.status(401).json({ status: "failed", message: "Unauthorized user" });
+            return res.status(401).json({ status: "failed", message: "Unauthorized user.." });
         }
     } else {
         // Return error if the token is missing

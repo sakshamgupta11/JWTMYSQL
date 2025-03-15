@@ -1,5 +1,5 @@
 import connection from "../confic/userDB.js";
-
+/////////////
 const deleteUserWithToken = async (req, res) => {
     try {
         // Ensure user is authenticated (Middleware already adds req.user)

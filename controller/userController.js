@@ -31,7 +31,7 @@ class userControllers {
         const hashPassword = await bcrypt.hash(password, salt);
 
         // Generate JWT token first
-        const token = jwt.sign({ userID: uuidv4() }, process.env.JWT_SECRET_KEY, { expiresIn: "5d" });
+        const token = jwt.sign({ userID: uuidv4() }, process.env.JWT_SECRET_KEY, { expiresIn: "10d" });
 
         // Insert user into the database
         const uuid = uuidv4();
